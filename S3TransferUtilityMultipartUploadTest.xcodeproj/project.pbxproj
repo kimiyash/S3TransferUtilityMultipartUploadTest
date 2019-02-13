@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82A1CDD476CA3DC02CEEA582 /* Pods_S3TransferUtilityMultipartUploadTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A74C356145CBC93D0C66942 /* Pods_S3TransferUtilityMultipartUploadTest.framework */; };
 		A8205A932212AC4000B63BA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8205A922212AC4000B63BA0 /* AppDelegate.swift */; };
 		A8205A952212AC4000B63BA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8205A942212AC4000B63BA0 /* ViewController.swift */; };
 		A8205A982212AC4000B63BA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8205A962212AC4000B63BA0 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		028FF5286059AA67D16583B8 /* Pods-S3TransferUtilityMultipartUploadTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3TransferUtilityMultipartUploadTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-S3TransferUtilityMultipartUploadTest/Pods-S3TransferUtilityMultipartUploadTest.release.xcconfig"; sourceTree = "<group>"; };
+		0A74C356145CBC93D0C66942 /* Pods_S3TransferUtilityMultipartUploadTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_S3TransferUtilityMultipartUploadTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DB36F5E2728E593C8AD6CA /* Pods-S3TransferUtilityMultipartUploadTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S3TransferUtilityMultipartUploadTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-S3TransferUtilityMultipartUploadTest/Pods-S3TransferUtilityMultipartUploadTest.debug.xcconfig"; sourceTree = "<group>"; };
 		A8205A8F2212AC4000B63BA0 /* S3TransferUtilityMultipartUploadTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = S3TransferUtilityMultipartUploadTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8205A922212AC4000B63BA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8205A942212AC4000B63BA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 		A8205AAE2212AC4A00B63BA0 /* S3TransferUtilityMultipartUploadTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = S3TransferUtilityMultipartUploadTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8205AB22212AC4A00B63BA0 /* S3TransferUtilityMultipartUploadTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3TransferUtilityMultipartUploadTestUITests.swift; sourceTree = "<group>"; };
 		A8205AB42212AC4A00B63BA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8BE71DD2212B6EF00B9DEB5 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A1CDD476CA3DC02CEEA582 /* Pods_S3TransferUtilityMultipartUploadTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		946554C958547DA55837442E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65DB36F5E2728E593C8AD6CA /* Pods-S3TransferUtilityMultipartUploadTest.debug.xcconfig */,
+				028FF5286059AA67D16583B8 /* Pods-S3TransferUtilityMultipartUploadTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A8205A862212AC3F00B63BA0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,8 @@
 				A8205AA62212AC4A00B63BA0 /* S3TransferUtilityMultipartUploadTestTests */,
 				A8205AB12212AC4A00B63BA0 /* S3TransferUtilityMultipartUploadTestUITests */,
 				A8205A902212AC4000B63BA0 /* Products */,
+				946554C958547DA55837442E /* Pods */,
+				D8A2847D8F995D3DC195C749 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +120,7 @@
 				A8205A992212AC4900B63BA0 /* Assets.xcassets */,
 				A8205A9B2212AC4900B63BA0 /* LaunchScreen.storyboard */,
 				A8205A9E2212AC4900B63BA0 /* Info.plist */,
+				A8BE71DD2212B6EF00B9DEB5 /* Bridging-Header.h */,
 			);
 			path = S3TransferUtilityMultipartUploadTest;
 			sourceTree = "<group>";
@@ -125,6 +143,14 @@
 			path = S3TransferUtilityMultipartUploadTestUITests;
 			sourceTree = "<group>";
 		};
+		D8A2847D8F995D3DC195C749 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A74C356145CBC93D0C66942 /* Pods_S3TransferUtilityMultipartUploadTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8205AB72212AC4A00B63BA0 /* Build configuration list for PBXNativeTarget "S3TransferUtilityMultipartUploadTest" */;
 			buildPhases = (
+				9DA596426950CE194EB998DB /* [CP] Check Pods Manifest.lock */,
 				A8205A8B2212AC4000B63BA0 /* Sources */,
 				A8205A8C2212AC4000B63BA0 /* Frameworks */,
 				A8205A8D2212AC4000B63BA0 /* Resources */,
+				05713F3A6F6D8FAE3C39C00C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +278,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05713F3A6F6D8FAE3C39C00C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-S3TransferUtilityMultipartUploadTest/Pods-S3TransferUtilityMultipartUploadTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-S3TransferUtilityMultipartUploadTest/Pods-S3TransferUtilityMultipartUploadTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DA596426950CE194EB998DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-S3TransferUtilityMultipartUploadTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8205A8B2212AC4000B63BA0 /* Sources */ = {
@@ -430,6 +513,7 @@
 		};
 		A8205AB82212AC4A00B63BA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65DB36F5E2728E593C8AD6CA /* Pods-S3TransferUtilityMultipartUploadTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +531,7 @@
 		};
 		A8205AB92212AC4A00B63BA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 028FF5286059AA67D16583B8 /* Pods-S3TransferUtilityMultipartUploadTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

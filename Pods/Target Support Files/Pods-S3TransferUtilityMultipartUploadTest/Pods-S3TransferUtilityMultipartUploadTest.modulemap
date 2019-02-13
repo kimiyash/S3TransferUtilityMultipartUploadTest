@@ -1,0 +1,6 @@
+framework module Pods_S3TransferUtilityMultipartUploadTest {
+  umbrella header "Pods-S3TransferUtilityMultipartUploadTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
