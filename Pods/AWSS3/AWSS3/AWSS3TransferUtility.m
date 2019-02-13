@@ -1440,7 +1440,7 @@ static AWSS3TransferUtility *_defaultS3TransferUtility = nil;
     
     [transferUtilityMultiPartUploadTask.expression assignRequestParameters:request];
    
-    [[self.preSignedURLBuilder getPreSignedURL:request] continueWithSuccessBlock:^id(AWSTask *task) {
+    AWSTask* preSignedUrlTask = [[self.preSignedURLBuilder getPreSignedURL:request] continueWithSuccessBlock:^id(AWSTask *task) {
         NSURL *presignedURL = task.result;
         NSMutableURLRequest * urlRequest = [NSMutableURLRequest requestWithURL:presignedURL];
          urlRequest.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
@@ -1474,6 +1474,11 @@ static AWSS3TransferUtility *_defaultS3TransferUtility = nil;
        
         return nil;
     }];
+
+    if (!preSignedUrlTask.completed) {
+        AWSDDLogDebug(@"[debug print] presignedUrlTask Uncompleted!!!!");
+    }
+
     return nil;
 }
 

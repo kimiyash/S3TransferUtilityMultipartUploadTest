@@ -182,12 +182,13 @@ static NSString *const AWSCredentialsProviderKeychainIdentityId = @"identityId";
     // Preemptively refresh credentials if any of the following is true:
     // 1. accessKey or secretKey is nil.
     // 2. the credentials expires within 10 minutes.
-    if (self.internalCredentials.accessKey
-        && self.internalCredentials.secretKey
-        && [self.internalCredentials.expiration compare:[NSDate dateWithTimeIntervalSinceNow:10 * 60]] == NSOrderedDescending) {
-
-        return [AWSTask taskWithResult:self.internalCredentials];
-    }
+// NOTE: Omitted use the internalCredentials for easelly bug reproduction
+//    if (self.internalCredentials.accessKey
+//        && self.internalCredentials.secretKey
+//        && [self.internalCredentials.expiration compare:[NSDate dateWithTimeIntervalSinceNow:10 * 60]] == NSOrderedDescending) {
+//
+//        return [AWSTask taskWithResult:self.internalCredentials];
+//    }
 
     // request new credentials
     AWSSTSAssumeRoleWithWebIdentityRequest *webIdentityRequest = [AWSSTSAssumeRoleWithWebIdentityRequest new];
@@ -527,10 +528,11 @@ static NSString *const AWSCredentialsProviderKeychainIdentityId = @"identityId";
     // Returns cached credentials when all of the following conditions are true:
     // 1. The cached credentials are not nil.
     // 2. The credentials do not expire within 10 minutes.
-    if (self.internalCredentials
-        && [self.internalCredentials.expiration compare:[NSDate dateWithTimeIntervalSinceNow:10 * 60]] == NSOrderedDescending) {
-        return [AWSTask taskWithResult:self.internalCredentials];
-    }
+// NOTE: Omitted use the internalCredentials for easelly bug reproduction
+//    if (self.internalCredentials
+//        && [self.internalCredentials.expiration compare:[NSDate dateWithTimeIntervalSinceNow:10 * 60]] == NSOrderedDescending) {
+//        return [AWSTask taskWithResult:self.internalCredentials];
+//    }
     
     id<AWSCognitoCredentialsProviderHelper> providerRef = self.identityProvider;
     return [[[providerRef logins] continueWithExecutor:self.refreshExecutor withSuccessBlock:^id _Nullable(AWSTask<NSDictionary<NSString *,NSString *> *> * _Nonnull task) {
