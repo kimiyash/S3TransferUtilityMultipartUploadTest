@@ -1477,6 +1477,7 @@ static AWSS3TransferUtility *_defaultS3TransferUtility = nil;
 
     if (!preSignedUrlTask.completed) {
         AWSDDLogDebug(@"[debug print] presignedUrlTask Uncompleted!!!!");
+        [preSignedUrlTask waitUntilFinished];
     }
 
     return nil;
