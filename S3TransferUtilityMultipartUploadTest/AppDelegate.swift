@@ -93,6 +93,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func createTransferUtilityConfiguration() -> AWSS3TransferUtilityConfiguration {
         let transferUtilityConfiguration = AWSS3TransferUtilityConfiguration()
         transferUtilityConfiguration.multiPartConcurrencyLimit = 1
+        transferUtilityConfiguration.retryLimit = 3
         return transferUtilityConfiguration
     }
 
