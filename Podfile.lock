@@ -1,13 +1,13 @@
 PODS:
-  - AWSCognito (2.9.0):
-    - AWSCore (= 2.9.0)
-  - AWSCognitoIdentityProvider (2.9.0):
+  - AWSCognito (2.9.10):
+    - AWSCore (= 2.9.10)
+  - AWSCognitoIdentityProvider (2.9.10):
     - AWSCognitoIdentityProviderASF (= 1.0.1)
-    - AWSCore (= 2.9.0)
+    - AWSCore (= 2.9.10)
   - AWSCognitoIdentityProviderASF (1.0.1)
-  - AWSCore (2.9.0)
-  - AWSS3 (2.9.0):
-    - AWSCore (= 2.9.0)
+  - AWSCore (2.9.10)
+  - AWSS3 (2.9.10):
+    - AWSCore (= 2.9.10)
 
 DEPENDENCIES:
   - AWSCognito
@@ -23,11 +23,11 @@ SPEC REPOS:
     - AWSS3
 
 SPEC CHECKSUMS:
-  AWSCognito: bad1157e5134d865026a48687cc6f1c0d602024f
-  AWSCognitoIdentityProvider: 31b3774e249ddd82b56722badd5ae9db13121540
+  AWSCognito: 1dd5b0e1d9e0706f9757ccce7c6fad9dc1d25ddb
+  AWSCognitoIdentityProvider: 5e72467f174a970e9d357fc06666e3f32e6eda70
   AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
-  AWSCore: 4e3bb5d2c38bcc0811882cd8107ba7ff94bee9b9
-  AWSS3: 09697145dad965a40d68fa4e57e8c473c463d1ce
+  AWSCore: 22b6bbc6761ca9981d878155d11bc02edd681a64
+  AWSS3: fe0221519fe4d05adf4c3fdf0cb4477f5e433ee6
 
 PODFILE CHECKSUM: 8d5a445bdeea7dce23d05fc7410c825d43c1fbe0
 

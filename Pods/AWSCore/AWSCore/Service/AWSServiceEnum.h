@@ -107,6 +107,10 @@ typedef NS_ENUM(NSInteger, AWSRegionType) {
      *  EU (Stockholm)
      */
     AWSRegionEUNorth1 NS_SWIFT_NAME(EUNorth1),
+    /**
+     *  Asia Pacific (Hong Kong)
+     */
+    AWSRegionAPEast1 NS_SWIFT_NAME(APEast1),
 };
 
 /**
@@ -252,6 +256,10 @@ typedef NS_ENUM(NSInteger, AWSServiceType) {
      *  Amazon Kinesis Video Archived Media
      */
     AWSServiceKinesisVideoArchivedMedia NS_SWIFT_NAME(KinesisVideoArchivedMedia),
+    /**
+     * Amazon SageMaker Runtime
+     */
+    AWSServiceSageMakerRuntime NS_SWIFT_NAME(SageMakerRuntime),
     
 };
 
